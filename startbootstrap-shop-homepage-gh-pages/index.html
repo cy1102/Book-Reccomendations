@@ -27,20 +27,22 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                     <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Genres</a>
+                        <a class="nav-link dropdown-toggle"  href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">All Books</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#!">Fantasy</a></li>
-                            <li><a class="dropdown-item" href="#!">Horror</a></li>
-                            <li><a class="dropdown-item" href="#!">Romance</a></li>
-                            <li><a class="dropdown-item" href="#!">Mystery</a></li>
+
+                            <li><a class="dropdown-item" onclick="filterBooks('allbooks')" href="#!">All Books</a></li>
+                            <li><a class="dropdown-item" onclick="filterBooks('fantasy')" href="#!">Fantasy</a></li>
+                            <li><a class="dropdown-item" onclick="filterBooks('horror')" href="#!">Horror</a></li>
+                            <li><a class="dropdown-item" onclick="filterBooks('romance')" href="#!">Romance</a></li>
+                            <li><a class="dropdown-item" onclick="filterBooks('mystery')" href="#!">Mystery</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                        <a class="nav-link dropdown-toggle"  href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">More</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#!">Discussions</a></li>
+                            <li><a class="dropdown-item" href="Chat.html">Discussions</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -70,10 +72,12 @@
     <section class="py-5">
         <div class="container px-4 px-lg-5 mt-5">
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                <div class="col mb-5">
+
+                <div class="col mb-5 allbooks fantasy">
                     <div class="card h-100">
                         <!-- Product image-->
-                        <img class="card-img-top" src="https://m.media-amazon.com/images/I/816piFl4DtL._AC_UF1000,1000_QL80_.jpg" alt="..." />
+                        <img class="card-img-top"
+                            src="https://m.media-amazon.com/images/I/816piFl4DtL._AC_UF1000,1000_QL80_.jpg" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -85,15 +89,83 @@
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to Reading List</a>
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to Reading
+                                    List</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col mb-5">
+                <div class="col mb-5 allbooks fantasy">
                     <div class="card h-100">
                         <!-- Product image-->
-                        <img class="card-img-top" src="https://m.media-amazon.com/images/I/81YBKMCqF1L._AC_UF1000,1000_QL80_.jpg" alt="..." />
+                        <img class="card-img-top"
+                            src="https://m.media-amazon.com/images/I/816piFl4DtL._AC_UF1000,1000_QL80_.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Fantasy</h5>
+                                <h6 class="booktitle">Five Kingdoms</h6>
+                                <h7 class="bookauthor">By Brandon Mull</h7>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to Reading
+                                    List</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5 allbooks fantasy">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top"
+                            src="https://m.media-amazon.com/images/I/816piFl4DtL._AC_UF1000,1000_QL80_.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Fantasy</h5>
+                                <h6 class="booktitle">Five Kingdoms</h6>
+                                <h7 class="bookauthor">By Brandon Mull</h7>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to Reading
+                                    List</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5 allbooks fantasy">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top"
+                            src="https://m.media-amazon.com/images/I/816piFl4DtL._AC_UF1000,1000_QL80_.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Fantasy</h5>
+                                <h6 class="booktitle">Five Kingdoms</h6>
+                                <h7 class="bookauthor">By Brandon Mull</h7>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to Reading
+                                    List</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5 allbooks horror">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top"
+                            src="https://m.media-amazon.com/images/I/81YBKMCqF1L._AC_UF1000,1000_QL80_.jpg" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -105,15 +177,17 @@
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to Reading List</a>
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to Reading
+                                    List</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col mb-5">
+                <div class="col mb-5 allbooks romance">
                     <div class="card h-100">
                         <!-- Product image-->
-                        <img class="card-img-top" src="https://m.media-amazon.com/images/I/71FFo6kU5NL._AC_UF1000,1000_QL80_.jpg" alt="..." />
+                        <img class="card-img-top"
+                            src="https://m.media-amazon.com/images/I/71FFo6kU5NL._AC_UF1000,1000_QL80_.jpg" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -125,15 +199,39 @@
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to Reading List</a>
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to Reading
+                                    List</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col mb-5">
+                <div class="col mb-5 allbooks romance">
                     <div class="card h-100">
                         <!-- Product image-->
-                        <img class="card-img-top" src="https://m.media-amazon.com/images/I/81tNnqcHxlL._AC_UF1000,1000_QL80_.jpg" alt="..." />
+                        <img class="card-img-top"
+                            src="https://m.media-amazon.com/images/I/71FFo6kU5NL._AC_UF1000,1000_QL80_.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Romance</h5>
+                                <h6 class="booktitle">The Summer I Turned Pretty</h6>
+                                <h7 class="bookauthor">By Jenny Han</h7>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to Reading
+                                    List</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5 allbooks mystery">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top"
+                            src="https://m.media-amazon.com/images/I/81tNnqcHxlL._AC_UF1000,1000_QL80_.jpg" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -145,12 +243,65 @@
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to Reading List</a>
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to Reading
+                                    List</a>
                             </div>
                         </div>
                     </div>
+                </div>
+                    <div class="col mb-5 allbooks mystery">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top"
+                                src="https://m.media-amazon.com/images/I/81tNnqcHxlL._AC_UF1000,1000_QL80_.jpg"
+                                alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Mystery</h5>
+                                    <h6 class="booktitle">The Adventures of Sherlock Holmes and Other Stories</h6>
+                                    <h7 class="bookauthor">By Sir Arthur Conan Doyle</h7>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to Reading
+                                        List</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col mb-5 allbooks mystery">
+                            <div class="card h-100">
+                                <!-- Product image-->
+                                <img class="card-img-top"
+                                    src="https://m.media-amazon.com/images/I/81tNnqcHxlL._AC_UF1000,1000_QL80_.jpg"
+                                    alt="..." />
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">Mystery</h5>
+                                        <h6 class="booktitle">The Adventures of Sherlock Holmes and Other Stories</h6>
+                                        <h7 class="bookauthor">By Sir Arthur Conan Doyle</h7>
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to
+                                            Reading
+                                            List</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                 </div>
+            </div>
+
+
     </section>
-    
+
     <!-- Footer-->
     <footer class="py-5 bg-dark">
         <div class="container">
@@ -161,6 +312,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script>
+// filterSelection(genre){
+// if genre:
+// display: None
+// else :
+//  display: block
+// }
+//
+
+
+
+    </script>
+
+
 </body>
 
 </html>
